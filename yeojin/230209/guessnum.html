@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>guess</title>
+  </head>
+  <body>
+    <script>
+      var low = 0;
+      var high = 0;
+      var answer = 0;
+
+      while (true) {
+        var count = 0;
+        low = 0;
+        high = 99;
+        answer = Math.floor(Math.random() * 100);
+        alert("이 게임은 컴퓨터가 정한 숫자를 추리해보는 게임입니다");
+        while (true) {
+          count++;
+          alert(`정답은 ${low} ~ ${high} 사이의 숫자입니다`);
+          var n = Number(
+            window.prompt(
+              `${count}번째 시도입니다. 숫자를 입력해주세요. 어떤 숫자가 정답일까요?`
+            )
+          );
+          if (n < answer) {
+            alert(`정답은 ${n}보다 더 큰 숫자입니다`);
+            low = n;
+          } else if (n > answer) {
+            alert(`정답은 ${n}보다 더 작은 숫자입니다`);
+            high = n;
+          } else {
+            alert(`${count}번만에 정답을 맞추셨습니다. 대단해요!`);
+            break;
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
