@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>attribute</title>
+    <style>
+      .red-color {
+        color: red;
+      }
+      .fs40 {
+        font-size: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="https://www.naver.com" class="fs40">NAVER</a>
+
+    <script>
+      const aEl = document.querySelector("a"); //a 선택
+      //   aEl.classList.add("red-color"); 일부만 바꾸는 것
+      aEl.setAttribute("class ", "red-color");
+    </script>
+  </body>
+</html>

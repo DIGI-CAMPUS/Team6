@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>attribute</title>
+    <style>
+      .red-color {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="https://www.naver.com" data-link="네이버">NAVER</a>
+
+    <script>
+      const aEl = document.querySelector("a"); //노드 선택
+      const href = aEl.getAttribute("href");
+      aEl.setAttribute("href", "https://www.daum.net");
+      aEl.setAttribute("data-link", "다음");
+      aEl.setAttribute("class", "red-color");
+      //   aEl.setAttribute("target", "_blank"); ///target속성값을 _blank로 지정
+    </script>
+  </body>
+</html>
