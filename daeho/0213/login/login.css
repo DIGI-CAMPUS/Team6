@@ -1,0 +1,29 @@
+.login {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+  text-align: center;
+  border-color: blue;
+  background-color: rgb(214, 214, 214);
+  border-radius: 20%;
+}
+
+.id {
+  font-size: large;
+}
+
+.input {
+  width: 230px;
+  height: 30px;
+  font-size: 20px;
+}
+
+.logobox {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+  text-align: center;
+}

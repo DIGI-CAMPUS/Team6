@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <title>Remove Node</title>
+  </head>
+  <body>
+    <p>text 1</p>
+    <a href="https://www.naver.com">NAVER</a>
+    <a href="https://www.daum.net">Daum</a>
+    <script>
+      //요소 노드 생성
+      const childNodes = document.body.childNodes;
+      console.log(childNodes);
+      childNodes.forEach((node) => {
+        if (node.nodeName === "A")
+          //소문자는 인식 안됨.
+          node.parentNode.removeChild(node);
+      });
+      //   const CEl= document.querySelector("p"); //querySelectorall
+      //   CEl.parentNode.removeChild(CEl);
+    </script>
+  </body>
+</html>
