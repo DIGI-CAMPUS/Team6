@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>queue 큐</title>
+  <script src = "../jquery.js"></script>
+  <script>
+    $(function () {
+      $(".txt1")  // 뭘 사용할지 미리 선택, 밑에서 animate 효과 추가(animate는 순서대로 진행)
+      .animate({marginLeft:"100px"},1000)
+      .animate({marginLeft:"400px"},1000)
+      .animate({marginLeft:"700px"},1000)
+
+      $(".txt2") 
+      .animate({marginLeft:"100px"},1000)
+      .animate({marginLeft:"400px"},1000)
+      .animate({marginLeft:"700px"},1000)
+      $(".txt2").clearQueue();  // 첫번째 애니메이트를 제외한 대기 애니메이션 제거
+      })
+  </script>
+  <style>
+    * {
+      margin: 0;
+    }
+
+    .txt1 {
+      width: 50px;
+      text-align: center;
+      background-color: skyblue;
+    }
+
+    .txt2 {
+      width: 50px;
+      text-align: center;
+      background-color: lemonchiffon;;
+    }
+  </style>
+</head>
+<body>
+  <p class = "txt1">내용1</p>
+  <p class = "txt2">내용2</p>
+</body>
+</html>

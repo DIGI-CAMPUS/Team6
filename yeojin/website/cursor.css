@@ -1,0 +1,45 @@
+.cursor {
+  width: 0.8rem;
+  height: 0.8rem;
+  border: 2px solid rgb(0, 81, 255);
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1000;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: all 0.3s ease;
+  transition-property: background, transform;
+  transform-origin: 100% 100%;
+  backdrop-filter: sepia(50%);
+  background-color: rgba(0, 81, 255, 0.329);
+}
+
+.cursor-grow {
+  transform: scale(5);
+  transform-origin: 50% 50%;
+  background-color: #bce1ff;
+  border: 2px solid #bce1ff;
+}
+
+h1 {
+  margin-left: 2px;
+}
+
+
+/* hover된 링크의 글자 색상 정의(하얀색)*/
+/* .hovered-link 선택자명은 추후 JS로 추가할 예정!*/
+.hovered-h1 {
+  color: #fff;
+  text-shadow: -1px 0 2px #000, 0 1px 2px #000, 1px 0 2px #000, 0 -1px 2px #000; /* 글씨 테두리 추가 */
+}
+
+.hovered-h1::after {
+  content: "";
+  display: block;
+  width: 128px;
+  border-bottom: 4px solid #fff;
+}
+
+.hvrdCrdHdr {
+  border-bottom: 6px solid #000;
+}
