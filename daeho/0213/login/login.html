@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로그인화면</title>
+    <link rel="stylesheet" href="login.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <footer></footer>
+    <article>
+      <div class="logobox" style="height: auto; border: 1px solid black">
+        <img
+          src="https://blog.kakaocdn.net/dn/CHb0U/btqxrW04Y5b/mzimBHhLuGMBYvCS33uyh0/img.jpg"
+          alt="인스타"
+          style="width: 200px"
+          ,
+          height="250px;"
+          text-align="center"
+        />
+      </div>
+
+      <div class="login">
+        <h1 class="title">Instagram</h1>
+        <hr />
+        <p class="id">
+          ID:
+          <input
+            type="text"
+            placeholder="아이디를 입력하세요"
+            onfocus="this.placeholder=''"
+          />
+        </p>
+        <p class="pw">
+          PW: <input type="text" placeholder="비밀번호를 입력하세요" />
+        </p>
+        <p class="button"><button>로그인 하기</button></p>
+        <p class="button"><button>회원가입</button></p>
+
+        <label>자동로그인<input type="radio" name="gender" /></label>
+        <label>로그인유지<input type="radio" name="gender" /></label>
+        <hr />
+      </div>
+    </article>
+  </body>
+</html>
